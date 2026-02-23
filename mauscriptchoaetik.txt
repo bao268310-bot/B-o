@@ -1,6 +1,4 @@
--- ✅ MẪU CHUẨN CHO NGƯỜI MỚI | TÉO HUB 🍎
--- Giữ nguyên giao diện thật, chỉ thêm hướng dẫn 👈 ngay bên cạnh dòng cần sửa
-
+-- ✅ MẪU CHUẨN ĐÃ SỬA LỖI | PNGBAO2K11
 repeat task.wait() until game:IsLoaded()
 
 -- 🟢 Nút mở menu chính
@@ -17,7 +15,8 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
 ImageButton.Size = UDim2.new(0, 40, 0, 40)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id="132997429335685"  -- 👈 đổi ID ảnh nút mở menu tại đây (ảnh roblox)
+-- Đã sửa lỗi dấu ngoặc kép ở dòng dưới đây 👇
+ImageButton.Image = "rbxassetid://132997429335685" 
 
 UICorner.CornerRadius = UDim.new(1, 10)
 UICorner.Parent = ImageButton
@@ -28,43 +27,36 @@ end)
 
 -- 🟣 Giao diện Fluent
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-repeat wait() until game:IsLoaded()
 
 -- 🪟 Cửa sổ chính
 local Window = Fluent:CreateWindow({
-	Title = "script baw tổng hợp",         -- 👈 đổi thành tên script của bạn
-	SubTitle = "by pngbao2k11",              -- 👈 đổi mô tả phụ
+	Title = "script baw tổng hợp",         
+	SubTitle = "by pngbao2k11",              
 	TabWidth = 157,
 	Size = UDim2.fromOffset(450, 300),
 	Acrylic = true,
-	Theme = "Dark",                   -- 👈 đổi màu chủ đạo: Amethyst, Dark, Aqua, Light,...
+	Theme = "Dark",                   
 	MinimizeKey = Enum.KeyCode.End
 })
 
 -- 📑 Các tab (mục chính)
 local Tabs = {
-		Main0 = Window:AddTab({ Title = "tiktok của tui" }),  -- 👈 đổi tên tab 1
-	
-	Main1 = Window:AddTab({ Title = "blox fruit" }),  -- 👈 đổi tên tab 1
-	Main2 = Window:AddTab({ Title = "99 đêm " }),  -- 👈 đổi tên tab 2
-	Main3 = Window:AddTab({ Title = "sóng thần " }),     -- 👈 đổi tên tab 3
-Main4 = Window:AddTab({ Title = "hop sever blox fruit" }),        -- 👈 đổi tên tab 4
+	Main0 = Window:AddTab({ Title = "tiktok của tui" }),  
+	Main1 = Window:AddTab({ Title = "blox fruit" }),  
+	Main2 = Window:AddTab({ Title = "99 đêm " }),  
+	Main3 = Window:AddTab({ Title = "sóng thần " }),     
+	Main4 = Window:AddTab({ Title = "hop sever blox fruit" })
+}
+
 ------------------------------------------------
 -- TAB 1: Các kênh tiktok
 ------------------------------------------------
 Tabs.Main0:AddButton({
-	Title = "pngbao2k11",              -- 👈 tên nút
-	Description = "",-- 👈 mô tả nút
+	Title = "pngbao2k11",              
+	Description = "Follow để ủng hộ mình nhé!",
 	Callback = function()
-		setclipboard("https://www.tiktok.com/@pngbao2k11?_t=ZS-90QsJQ5j0NO&_r=1")  -- 👈 link sao chép
-	end
-})
-
-Tabs.Main0:AddButton({
-	Title = "pngbao2k11",
-	Description = "có gì tui sẽ cho thêm nhiều hơn ",
-	Callback = function()
-		setclipboard("https://www.tiktok.com/@pngbao2k11_t=ZS-90QsHokNlwN&_r=1")     -- 👈 link khác
+		setclipboard("https://www.tiktok.com/@pngbao2k11?_t=ZS-90QsJQ5j0NO&_r=1")
+		Fluent:Notify({ Title = "Thông báo", Content = "Đã copy link TikTok!", Duration = 3 })
 	end
 })
 
@@ -73,93 +65,77 @@ Tabs.Main0:AddButton({
 	Description = "fl tiktok để biết thêm nhiều script",
 	Callback = function()
 		setclipboard("https://www.tiktok.com/@b.yt03?_t=ZS-90QsHmSjaiu&_r=1")
+		Fluent:Notify({ Title = "Thông báo", Content = "Đã copy link TikTok!", Duration = 3 })
 	end
 })
 
 ------------------------------------------------
--- TAB 2: Ví dụ thêm script
+-- TAB 2: Blox Fruit
 ------------------------------------------------
-
 Tabs.Main1:AddButton({
-	Title = "blue x hud",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
+	Title = "blue x hud",                             
+	Description = "script này ngon á đủ chức năng cả😃",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
 	end
 })
+
 Tabs.Main1:AddButton({
-	Title = "redz của longhihihi",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
+	Title = "redz của longhihihi",                             
+	Description = "script này ngon á đủ chức năng cả😃",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/longhihilonghihi-hub/RedzHub/refs/heads/main/RedzHubv1.txt"))()
 	end
 })
 
 Tabs.Main1:AddButton({
-	Title = "xete v3",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
+	Title = "xete v3",                             
+	Description = "script này ngon á đủ chức năng cả😃",
 	Callback = function()
 		getgenv().Version = "V3"
-getgenv().Team = "Marines"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()
+		getgenv().Team = "Marines"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()
 	end
 })
 
-Tabs.Main1:AddButton({
-	Title = "script đi pvp ",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
+------------------------------------------------
+-- TAB 3: 99 Đêm
+------------------------------------------------
+Tabs.Main2:AddButton({
+	Title = "99 đêm sikibidi ",                             
+	Description = "script này ngon á đủ chức năng cả😃",
 	Callback = function()
-	local script_mode = "PVP" -- PVP, FARM
-local loader = loadstring
-local url = "https://raw.githubusercontent.com/hermanos-dev/hermanos-hub/refs/heads/main/Loader.lua"
-local response = game:HttpGet(url)
-loader(response)()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
 	end
 })
 
 Tabs.Main2:AddButton({
-	Title = "99 đêm sikibidi ",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
+	Title = "99 đêm ",                             
+	Description = "script này ngon á đủ chức năng cả😃",
 	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/itspanny272/99-Night-In-The-Forest-/refs/heads/main/KeyLoader.txt"))()
 	end
 })
 
-Tabs.Main2:AddButton({
-	Title = " không bt :))",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GAG-devs/MurderMystery2/refs/heads/main/lua"))()
-	end
-})
-
-Tabs.Main2:AddButton({
-	Title = "99 đêm ",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/itspanny272/99-Night-In-The-Forest-/refs/heads/main/KeyLoader.txt"))()
-	end
-})
+------------------------------------------------
+-- TAB 4: Sóng Thần
+------------------------------------------------
 Tabs.Main3:AddButton({
-	Title = "sóng thần  ",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
+	Title = "sóng thần (Source 1) ",                             
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/V2/refs/heads/main/EscapeTsunamiForBrainrots"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/V2/refs/heads/main/EscapeTsunamiForBrainrots"))()
 	end
 })
 
-Tabs.Main3:AddButton({
-	Title = "sóng thần  ",                             -- 👈 tên nút hiển thị
-	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/EscapeTsunamiForBrainrots"))()
-	end
-})
-
+------------------------------------------------
+-- TAB 5: Hop Server
+------------------------------------------------
 Tabs.Main4:AddButton({
-	Title = "night hup FREEMIUM ",                             -- 👈 tên nút hiển thị
-	Description = "script này cần get key ak get cx nhanh ngon nhất ",-- 👈 mô tả
+	Title = "night hup FREEMIUM ",                             
+	Description = "script này cần get key, khá ngon",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/HopScript.luau"))() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/HopScript.luau"))() 
 	end
 })
+
+Window:SelectTab(1) -- Tự động chọn Tab đầu tiên khi mở
