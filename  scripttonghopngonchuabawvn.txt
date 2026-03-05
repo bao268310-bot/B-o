@@ -5,7 +5,7 @@ pcall(function()
 end)
 
 local WindUI = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/teoscrvn/T-ng-h-p-/main/Script%20test%20(1).txt"
+"https://raw.githubusercontent.com/teoscrvn/T-ng-h-p-/main/Script%20test%20(1).txt"
 ))()
 
 if not WindUI then
@@ -25,7 +25,7 @@ local Window = WindUI:CreateWindow({
 
 -- 🔹 Nút mở HUB
 Window:EditOpenButton({
-    Title = "baw scripts tổng hợp VN🇻🇳",
+    Title = "baw scripts tổng hợp VN",
     Icon = "monitor",
     CornerRadius = UDim.new(0,16),
     StrokeThickness = 2,
@@ -36,9 +36,7 @@ Window:EditOpenButton({
     Draggable = true,
 })
 
--- =========================
---  HOME
--- =========================
+-- Tabs
 local Tabs = {}
 Tabs.Home1 = Window:Tab({ Title = "blox fruit" })
 Tabs.Home2 = Window:Tab({ Title = "99 đêm" })
@@ -47,16 +45,16 @@ Tabs.Home4 = Window:Tab({ Title = "fit lag" })
 Tabs.Home5 = Window:Tab({ Title = "hop sv bloxfruit"})
 Tabs.Home6 = Window:Tab({ Title = "garden horizons"})
 
---  Button 1: Định vị
+-- MARU
 Tabs.Home1:Button({
-    Title = "redz hud ",
+    Title = "maru",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/newredz/refs/heads/main/Main.luau"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/longhihilonghihi-hub/MaruHubV1/refs/heads/main/MainV1.Lua"))()
         print("Đã chạy")
     end
 })
 
---  Button 1: Định vị
+-- RUBU
 Tabs.Home1:Button({
     Title = "rubu v5",
     Callback = function()
@@ -65,31 +63,31 @@ Tabs.Home1:Button({
     end
 })
 
---  Toggle mẫu
-
---  Thông báo
 WindUI:Notify({
     Title = "Baw hud",
     Content = "Load thành công!",
     Duration = 4
 })
+
+-- BLUE X (đã sửa)
 Tabs.Home1:Button({
     Title = "blue x hud",
     Callback = function()
-loadstring(game:HttpGet("https:rawgithubusercontentc/Dev-BlueX/BlueX-Hub/refs/heads/mainMainlua"))()
-
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
         print("Đã chạy")
     end
 })
 
+-- QUANTUM
 Tabs.Home1:Button({
     Title = "quân tum",
     Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
         print("Đã chạy")
     end
 })
 
+-- GRAVITY
 Tabs.Home1:Button({
     Title = "gravity hud",
     Callback = function()
@@ -98,18 +96,19 @@ Tabs.Home1:Button({
     end
 })
 
+-- 99 ĐÊM
 Tabs.Home2:Button({
-    Title = "99 đêm ",
+    Title = "99 đêm",
     Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Devvzn/DevWare/refs/heads/main/DevMain"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Devvzn/DevWare/refs/heads/main/DevMain"))()
         print("Đã chạy")
     end
 })
- 
- Tabs.Home2:Button({
+
+Tabs.Home2:Button({
     Title = "fox name",
     Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
         print("Đã chạy")
     end
 })
@@ -117,44 +116,37 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Devvzn/DevWare/refs/h
 Tabs.Home3:Button({
     Title = "bất tử",
     Callback = function()
-      loadstring(game:HttpGet("https://script.vinzhub.com/loader"))()
+        loadstring(game:HttpGet("https://script.vinzhub.com/loader"))()
         print("Đã chạy")
     end
 })
+
 Tabs.Home4:Button({
-    Title = "fit lag ",
+    Title = "fit lag",
     Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/TIKTOK-BOYCHOIGAME/FIXLAG-TIKTOK-BOYCHOIGAME/refs/heads/main/FIXLAG-TIKTOK-BOYCHOIGAME.VND"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TIKTOK-BOYCHOIGAME/FIXLAG-TIKTOK-BOYCHOIGAME/refs/heads/main/FIXLAG-TIKTOK-BOYCHOIGAME.VND"))()
         print("Đã chạy")
     end
 })
+
 Tabs.Home5:Button({
     Title = "night hud FREEMIUM",
     Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/HopScript.luau"))() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/HopScript.luau"))()
         print("Đã chạy")
     end
 })
+
 Tabs.Home6:Button({
     Title = "x 10 tiền",
     Callback = function()
-      loadstring(game:HttpGet("https://pastefy.app/sZoD6Xyf/raw"))()
+        loadstring(game:HttpGet("https://pastefy.app/sZoD6Xyf/raw"))()
         print("Đã chạy")
     end
 })
+
+-- REDZ (đã sửa)
 Tabs.Home1:Button({
     Title = "redz hud long hihihi",
     Callback = function()
-loadstring(game:HttpGet(" https://raw.githubusercontent.com/longhihilonghihi-hub/RedzHub/refs/heads/main/RedzHubv1.txt"))()
-        print("Đã chạy")
-    end
-})
-Tabs.Home1:Button({
-    Title = "XETE V3",
-    Callback = function()
-getgenv().Version = "V3"
-getgenv().Team = "Marines"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()
-        print("Đã chạy")
-    end
-})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/longhihilonghihi-hub/RedzHub/
