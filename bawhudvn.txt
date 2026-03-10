@@ -1,6 +1,53 @@
-Tabs.Home:Button({
-    Title = "BAw Hub ",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com"))()
+-- BawHub.lua
+
+-- Baw Hub Script for Blox Fruits
+
+-- Features:
+-- Auto Farm
+-- Auto Quest
+-- Teleport
+-- Utility Tools
+
+local BawHub = {}
+
+-- Initialize variables
+BawHub.autoFarmEnabled = false
+BawHub.autoQuestEnabled = false
+BawHub.teleportEnabled = false
+
+function BawHub:toggleAutoFarm()
+    self.autoFarmEnabled = not self.autoFarmEnabled
+    if self.autoFarmEnabled then
+        print("Auto Farm activated!")
+        -- Add auto farming logic here
+    else
+        print("Auto Farm deactivated!")
     end
-})
+end
+
+function BawHub:toggleAutoQuest()
+    self.autoQuestEnabled = not self.autoQuestEnabled
+    if self.autoQuestEnabled then
+        print("Auto Quest activated!")
+        -- Add auto quest logic here
+    else
+        print("Auto Quest deactivated!")
+    end
+end
+
+function BawHub:toggleTeleport()
+    self.teleportEnabled = not self.teleportEnabled
+    if self.teleportEnabled then
+        print("Teleport activated!")
+        -- Add teleport logic here
+    else
+        print("Teleport deactivated!")
+    end
+end
+
+function BawHub:utilityTools()
+    -- Add utility tools functions
+    print("Utility tools activated!")
+end
+
+return BawHub
